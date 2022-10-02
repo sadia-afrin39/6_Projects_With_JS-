@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<title>6 challenge</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Sadia Afrin Tarin">
+		<meta http-equiv="Content-type" content="text/html ;charset=UTF-8">
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script defer src="javascript.js"></script>		<!--defer is most important for DOM-->
+	</head>
+		
+	<body>
+	
+	<!--//Challenge 1: Your age in days-->
+		<div class="container-1">
+			<h2>Challenge 1: Your age in days</h2>
+			<div class="flex-box-container-1">
+				<div>
+				<button type="button" class="btn blue" onclick="ageInDays()">Click me</button>
+				</div>
+				<div>
+				<button type="button" class="btn red" onclick="resset()">Reset</button>
+				</div>
+			</div>
+			
+			<div class="flex-box-container-1">
+				<div id="flex-box-result"></div>
+			</div>
+		</div>
+		
+	<!--Challenge 2: Key Generate-->
+		<div class="container-1">
+			<h2>Challenge 2: Key Generate</h2>
+			<button class="btn green"id="Key-generator"onclick="generateKey()">Generate Key</button>
+			<div class="flex-box-container-1" id="flex-Key-gen">  
+			</div>
+		</div>
+		
+	<!--Challenge 3: rock,papper,scissors-->
+		<div class="container-1">
+			<h2>Challenge 3: rock,papper,scissors</h2>
+			<div class="flex-box-rps" id="flex-box-rps-div">
+				<img id="rock" src="images/download.jfif" height ="150" width ="150" onclick="rpsGame(this)"/>
+				<img id="paper" src="images/download (1).jfif" height ="150" width ="150" onclick="rpsGame(this)"/>
+				<img id="scissors" src="images/download (2).jfif" height ="150" width ="150" onclick="rpsGame(this)"/>
+			</div>
+		</div>
+		
+	<!--Challenge 4: Change the color of all buttons-->
+		<div class="container-1">
+			<h2 id ="change-my-color">Challenge 4: Change the color of all buttons</h2>
+			<div class="flex-box-container-1" >
+				<form action="">
+					<select name="backdrop" id="background" onchange="buttonColorChange(this)">
+						<option value="random">Random</option>
+						<option value="red">Red</option>
+						<option value="green">Green</option>
+						<option value="reset">Reset</option>
+					</select> 
+				</form>
+				
+				<button type="button" class="btn blue"> Wee!</button>
+				<button type="button" class="btn red"> Yahoo!</button>
+				<button type="button" class="btn yellow"> Google!</button>
+				<button type="button" class="btn green"> Facebook!</button>
+			</div>
+		</div>
+		
+	<!--Challenge 5: BlackJack-->
+		<div class="container-1">
+			<h2>Challenge 5: BlackJack</h2>
+			<h3> <span id="blackjack-result">Let's Play! </span> </h3>
+			
+			<div class="flex-blackjack-row-1">
+				<div id="your-box">
+					<h2>You: <span id="your-blackjack-result">0</span> </h2>
+				</div>
+				<div id="dealer-box">
+					<h2>Dealer: <span id="dealer-blackjack-result">0</span> </h2>
+				</div>
+			</div>
+			
+			<div class="flex-blackjack-row-2">
+				<div>
+				<button type="button" class="btn blue lg-mr" id="blackjack-hit-button">You</button>  <!-- hit, stand, deal-->
+				<button type="button" class="btn yellow lg-mr" id="blackjack-stand-button">Computer</button>
+				<button type="button" class="btn red lg-mr" id="blackjack-deal-button">Play again</button>
+				</div>
+			</div>
+			
+			<div class="flex-box-container-1">
+				<table>
+					<tr>
+						<th>Wins</th>
+						<th>Losses</th>
+						<th>Draws</th>
+					</tr>
+					
+					<tr>
+						<td> <span id ="wins">0</span> </td>
+						<td> <span id ="losses">0</span> </td>
+						<td> <span id ="draws">0</span> </td>	
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+	</body>
+</html>

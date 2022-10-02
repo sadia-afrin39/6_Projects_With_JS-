@@ -1,0 +1,97 @@
+/*Challenge 1: Your age in days*/
+.container-1{
+	width:75%;
+	border:1px solid black;
+	margin:0 auto;
+	text-align:center;
+}
+
+.flex-box-container-1,.flex-box-rps,.flex-blackjack-row-1,.flex-blackjack-row-2{
+	display:flex;
+	padding:10px;
+	border:1px solid black;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content:space-around;
+}
+
+.flex-box-container-1 div{
+	display:flex;
+	padding:10px;
+	border:1px solid black;
+	align-items:center;
+}
+
+.btn{
+	padding:10px;
+	border:0;
+	outline:0;
+	color:white;
+	cursor:pointer;
+	border-radius:6px;
+}
+.blue{
+	background-color:blue;
+}
+.red{
+	background-color:red;
+}
+.yellow{
+	background-color:yellow;
+	color:#000;
+}
+.green{
+	background-color:green;
+}
+
+
+/*Challenge 2: Key Generate*/
+
+.flex-box-container-1 img{
+	width:250px;
+	box-shadow: 0px 10px 50px rgba(0,0,0,0.7);
+	margin:10px;
+}
+
+/*Challenge 3: rock,papper,scissors*/
+.flex-box-rps img:hover{
+	box-shadow: 0px 10px 50px rgba(37,50,233,1);
+}
+
+/*Challenge 4: Change the color of all buttons*/
+
+/*Challenge 5: BlackJack*/
+
+.lg-mr{
+	padding:13px 20px;
+	margin:6px;
+}
+
+.flex-blackjack-row-1,.flex-blackjack-row-2{
+	background-color:green;
+	color :#ffffff;
+}
+
+.flex-blackjack-row-1 div{
+	border:1px solid black;
+	padding:10px;
+	height:350px;
+	flex:1;
+	text-align:center;
+}
+
+.flex-blackjack-row-1 img{  /*for the cards*/
+	width:15%;
+	padding:10px;
+}
+
+.flex-blackjack-row-2 div,.flex-blackjack-row-2 button{
+	border:1px solid black;
+	padding:10px;
+}
+
+table,th,td{
+	padding:5px;
+	border:1px solid black;
+	border-collapse: collapse;
+}
